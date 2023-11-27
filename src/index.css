@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./assets//ClashDisplay-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/HelveticaNeue.ttf") format("ttf");
+}
+
+body {
+  @apply font-clash;
+}
+
+#app {
+  @apply px-[30px];
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-[500px] mx-auto my-[30px] overflow-auto min-h-[300px] border-2 border-steelblue p-[30px] rounded-2xl shadow-md;
+  }
+
+  .btn {
+    @apply bg-slate-700 text-white border-none py-[10px] px-[20px] m-[5px] rounded-5 cursor-pointer outline-none text-[15px] focus:outline-none active:scale-98 flex justify-center items-center font-bold;
+  }
+
+  .btn-block {
+    @apply block w-full;
+  }
+}
