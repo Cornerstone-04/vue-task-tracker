@@ -12,16 +12,43 @@
 }
 
 body {
-  @apply font-clash;
+  @apply font-helvetica;
 }
 
 #app {
-  @apply px-[30px];
+  @apply p-[30px] min-h-screen w-full bg-lavender;
+}
+h1 {
+  font-size: 2.125rem;
+}
+h2 {
+  font-size: 1.875rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.125rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 @layer utilities {
   .container {
-    @apply max-w-[500px] mx-auto my-[30px] overflow-auto min-h-[300px] border-2 border-steelblue p-[30px] rounded-2xl shadow-md;
+    @apply mx-auto overflow-auto w-full max-w-[500px] min-h-[300px] border-2 border-steel-blue p-[30px] rounded-2xl shadow-md;
   }
 
   .btn {

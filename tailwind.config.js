@@ -6,17 +6,22 @@ export default {
     extend: {
       fontFamily: {
         clash: "Clash Display",
-        helvetica:"Helvetica"
+        helvetica: "Helvetica",
       },
       scale: {
         98: "0.98",
       },
-      borderRadius:{
-        5: "5px"
+      borderRadius: {
+        5: "5px",
       },
-      colors:{
-        steelblue: "#4682B4"
-      }
+      colors: {
+        "steel-blue": "#4682B4",
+        ivory: "#FFFFF0",
+        marble: "#F2F8FC",
+        pearl: "#FCFCF7",
+        lavender: "#F4F1F8",
+        "cold-steel": "#F8F7F4",
+      },
     },
   },
   plugins: [],
